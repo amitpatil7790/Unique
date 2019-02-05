@@ -1,0 +1,119 @@
+.header-wrapper{
+
+}
+.header-top{
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+.header-top .free{
+	width: 60%;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 0 0 0 3%;
+}
+.header-top .contact, .header-top .track, .header-top .notifications{
+	width: 10%;
+    display: inline-block;
+    
+} 
+.header-top .contact a, .header-top .track a, .header-top .notifications a{
+    font-size: 14px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #ccc;
+    text-decoration: none;
+}
+.header-top .track{
+    width: 11%;
+}
+.header-top .contact::after, .header-top .track::after{
+	content:"";
+    width: 2px;
+    height: 10px;
+    display: inline-block;
+    background: #ccc;
+    margin: 0 0 0 16%;
+}
+.main-header {
+    padding: 1% 0;
+}
+.main-header .menu{
+    display: inline-block;
+    width: 40%;
+}
+.main-header .menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    width: 24%;
+}
+.main-header .menu ul li a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+}
+
+.main-header .logo{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    vertical-align: bottom;
+}
+.main-header .logo img{
+    width: 100%;
+}
+.main-header .search{
+    width: 16%;
+    display: inline-block;
+    margin: 0 0 0 8%;
+}
+.main-header .search input{
+    width: 100%;
+    border: none;
+    background: #e7ecef;
+    line-height: 2;
+    font-size: 14px;
+    font-family: sans-serif;
+    border-radius: 4px;
+}
+.main-header .wishlist, .main-header .login, .main-header .mini-cart{
+    display: inline-block;
+    padding: 0 3%;
+    vertical-align: middle;
+}
+.main-header .wishlist img, .main-header .login img, .main-header .mini-cart img{
+    width: 100%;
+}
+.main-header .wishlist{
+    max-width: 2%
+}
+.main-header .login{
+    max-width: 1.8%
+}
+.main-header .mini-cart{
+    max-width: 1.5%
+}
+
+input::placeholder{
+    padding: 0 0 0 4%; 
+}
+input::-webkit-input-placeholder { 
+  padding: 0 0 0 4%;
+}  
+input::-moz-placeholder { 
+  padding: 0 0 0 4%;
+}
+input:-ms-input-placeholder { 
+  padding: 0 0 0 4%;
+}
+input:-moz-placeholder { 
+  padding: 0 0 0 4%;
+}

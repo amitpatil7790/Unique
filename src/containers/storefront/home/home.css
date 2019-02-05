@@ -1,0 +1,323 @@
+.home-wrapper{
+}
+
+.wrapper{
+	
+}
+.banner{
+	width: 100%;
+	position: relative;
+}
+.banner img{
+	width: 100%;
+}
+.banner-content{
+	position: absolute;
+    top: 12%;
+    right: 6%;
+    background: #fff;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
+    width: 38%;
+    padding: 4% 2%;
+    text-align: center;
+}
+.banner-content h4{
+	font-family: sans-serif;
+    font-size: 58px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f4754c;
+    margin: 0;
+}
+.banner-content h5{
+	font-size: 42px;
+    font-weight: normal;
+    color: #1e2569;
+    margin: 4% 0;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-align: center;
+}
+.banner-content p{
+	width: 70%;
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #807979;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+.banner-content button{
+	width: 34%;
+    background-color: #1f2767;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    padding: 3% 0;
+    text-transform: uppercase;
+    margin: 6% 0 0;
+}
+.deals-week{
+	padding: 2% 0;
+}
+
+.deals-week div{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1.5%;
+}
+.deals-week .deals{
+	background-color: #f4754c;
+	padding: 6.2% 0;
+}
+.deals-week .product img{
+	width: 100%;
+}
+.deals-week .deals h6{
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffd27f;
+    margin-top: 0;
+}
+.deals-week .deals h4{
+	font-size: 36px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.28;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.deals-week .deals span{
+	font-size: 50px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffd27f;
+    font-family: sans-serif;
+    display: block;
+}
+.top-selling{
+	background-color: #f7f6f6;
+	padding: 2% 0 4%;
+}
+.top-selling h4{
+	font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #494345;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin: 2% 0;
+}
+.top-selling .products{
+	width: 90%;
+	margin:0 auto;
+}
+.top-selling .products .product{
+	text-align: center;
+    background: #fff;
+}
+.top-selling .products .product-img{
+	width: 75%;
+    margin: 0 auto;
+}
+.top-selling .products .product-img img{
+	height: 220px;
+}
+.top-selling .products .pname{
+	font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #494345;
+    display: inline-block;
+    width: 73%;
+    font-family: sans-serif;
+    margin: 6% 0 6%;
+}
+
+.top-selling .products .prices{
+	padding: 0 0 8%;
+}
+.top-selling .products .prices .sale{
+	font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #942e4a;
+    font-family: sans-serif;
+    display: inline-block;
+    margin: 0 2% 0 0;
+}
+.top-selling .products .prices .price{
+	font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #a79c9f;
+    text-decoration: line-through;
+    display: inline-block;
+    font-family: sans-serif;
+    margin: 0 0 0 2%;
+}
+.top-selling .products .owl-nav .owl-prev{
+	background: url(../../../resources/images/nav-left.png);
+	width: 30px;
+    height: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    left: -2%;
+} 
+.top-selling .products .owl-nav .owl-next{
+	background: url(../../../resources/images/nav-right.png);
+	width: 30px;
+    height: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    right: -2%;
+}
+
+.seasonal-products{
+	background-color: #fff;
+	padding: 2% 0 4%;
+}
+.seasonal-products h4{
+	font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #494345;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin: 2% 0;
+}
+.seasonal-products .products{
+	width: 90%;
+	margin:0 auto;
+}
+.seasonal-products .products .product{
+	text-align: center;
+    background: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+.seasonal-products .products .product-img{
+	width: 75%;
+    margin: 0 auto;
+}
+.seasonal-products .products .product-img img{
+	height: 220px;
+}
+.seasonal-products .products .pname{
+	font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #494345;
+    display: inline-block;
+    width: 73%;
+    font-family: sans-serif;
+    margin: 6% 0 6%;
+}
+
+.seasonal-products .products .prices{
+	padding: 0 0 8%;
+}
+.seasonal-products .products .prices .sale{
+	font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #942e4a;
+    font-family: sans-serif;
+    display: inline-block;
+    margin: 0 2% 0 0;
+}
+.seasonal-products .products .prices .price{
+	font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #a79c9f;
+    text-decoration: line-through;
+    display: inline-block;
+    font-family: sans-serif;
+    margin: 0 0 0 2%;
+}
+.seasonal-products .products .owl-nav .owl-prev{
+	background: url(../../../resources/images/nav-left.png);
+	width: 30px;
+    height: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    left: -2%;
+} 
+.seasonal-products .products .owl-nav .owl-next{
+	background: url(../../../resources/images/nav-right.png);
+	width: 30px;
+    height: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    right: -2%;
+}

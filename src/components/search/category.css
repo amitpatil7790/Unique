@@ -1,0 +1,424 @@
+.category-page{
+	
+}
+.category-page::after{
+	content:'';
+	clear:both;
+	display:table;
+}
+
+.category-page .category-head{
+	background: #f2f3f4;
+	padding:4px 0;
+}
+.category-page .category-head .breadcrumb{
+	display: inline-block;
+    width: 31%;
+    padding: 0 0 0 4%;
+}
+
+/* Custom dropdown */
+.category-page .category-head .custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px; /* demo only */
+  width: 60%;
+  text-align: right;
+}
+
+.category-page .category-head .custom-dropdown select {
+  background-color: #fff;
+  color: #000;
+  font-size: inherit;
+  padding: .5em;
+  padding-right: 2.5em;	
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /*Hiding the select arrow for firefox*/
+  -moz-appearance: none;
+  /*Hiding the select arrow for chrome*/
+  -webkit-appearance:none;
+  /*Hiding the select arrow default implementation*/
+  appearance: none;
+  border: 1px solid #d4d4d4;
+}
+/*Hiding the select arrow for IE10*/
+.category-page .category-head .custom-dropdown select::-ms-expand {
+    display: none;
+}
+
+.category-page .category-head .custom-dropdown::before,
+.category-page .category-head .custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.category-page .category-head .custom-dropdown::after { /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 1em;
+  font-size: .625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -.5em;
+}
+
+.category-page .category-head .custom-dropdown::before { /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+  background-color: #fff;
+  border: 1px solid #d4d4d4;
+  border-left: none;
+}
+
+.category-page .category-head .custom-dropdown::after {
+  color: rgba(0,0,0,.6);
+}
+
+.category-page .category-head .custom-dropdown select[disabled] {
+  color: rgba(0,0,0,.25);
+}
+
+/*filter selection*/
+.category-page .filter-section{
+    border-right-color: #d1d1d1;
+    border-right-style: solid;
+    border-width: 1px;
+    padding: 2% 0;
+    float: left;
+    width: 22%;
+}
+.category-page .filter-section .price,.category-page .filter-section .color,.category-page .filter-section .size {
+	padding: 6% 8% 6%;
+    border-bottom-style: solid;
+    border-color: #d1d1d1;
+    border-width: 1px;
+}
+.category-page .filter-section .price h5, .category-page .filter-section .color h5,.category-page .filter-section .size h5 {
+	margin: 8% 0 10%;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+/* price filter */
+
+
+
+/* The container */
+.category-page .filter-section .color .container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 20px;
+    font-family: sans-serif;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: #8b8b8b;
+}
+
+/* Hide the browser's default checkbox */
+.category-page .filter-section .color .container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.category-page .filter-section .color .colormark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+}
+.category-page .filter-section .color .container input ~ .active{
+	text-transform: uppercase;
+}
+/* On mouse-over, add a grey background color */
+.category-page .filter-section .color .container:hover input ~ .active {
+	color: #000;
+}
+
+/* When the checkbox is checked, add a blue background */
+.category-page .filter-section .color .container input:checked ~ .active {
+	font-weight: bold;
+	color: #000;
+}
+
+/* size filter */
+/* The container */
+.category-page .filter-section .size .container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: sans-serif;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: #8b8b8b;
+}
+
+/* Hide the browser's default checkbox */
+.category-page .filter-section .size .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.category-page .filter-section .size .container .active{
+	text-transform: uppercase;
+}
+
+/* Create a custom checkbox */
+.category-page .filter-section .size .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.category-page .filter-section .size .container:hover input ~ .checkmark {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* When the checkbox is checked, add a blue background */
+.category-page .filter-section .size .container input:checked ~ .checkmark {
+  background-color: #f4754c;
+  color: #000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.category-page .filter-section .size .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.category-page .filter-section .size .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.category-page .filter-section .size .container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.category-page .product-list{
+	width: 73%;
+    vertical-align: top;
+    padding: 0 1% 0 2%;
+    float: left;
+}
+.category-page .product-list::after{
+	content: "";
+  	clear: both;
+  	display: table;
+}
+.category-page .product-list .product{
+	float: left;
+	width: 21%;
+	vertical-align: text-top;
+	margin: 1% 1%;
+	padding: 1%;
+	min-height: 370px;
+}
+.category-page .product-list .product:hover{
+	box-shadow:0px 0px 6px 4px #e3e3e3;
+	transform:scale(1.1,1.05);
+}
+
+.category-page .product-list .product .product-image{
+
+}
+.category-page .product-list .product .product-image img{
+	width: 100%;
+}
+.category-page .product-list .product .action-buttons{
+	display:none;
+}
+.category-page .product-list .product:hover .action-buttons{
+	display: block;
+}
+.category-page .product-list .product .action-buttons .add-to-bag{
+	border: 1px solid #f4754c;
+    background: #f4754c;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 3% 0;
+    font-weight: 500;
+    margin: 0 2% 0 0;
+    width: 48%;
+    cursor: pointer;
+   
+}
+.category-page .product-list .product .action-buttons .wishlist{
+	border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 3% 0;
+    font-weight: 500;
+    margin: 0 0 0 2%;
+    width: 48%;
+    cursor: pointer;
+}
+
+.category-page .product-list .product .product-name{
+	margin: 0;
+    padding: 4% 0 2%;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    color: #494345;
+}
+.category-page .product-list .product .prices{
+	padding: 2% 0 0 ;
+}
+.category-page .product-list .product .prices .sale-price{
+	display: inline-block;
+    width: 46%;
+    margin: 0 4% 0 0;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.category-page .product-list .product .prices .price{
+	display: inline-block;
+    width: 46%;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #828282;
+    text-decoration: line-through;
+}
+.category-page .product-list .product .prices .save-price{
+	margin: 0;
+	font-size: 16px;
+    color: #f4754c;
+    padding: 2% 0 0;
+    font-family: sans-serif;
+}
+
+.form {
+  margin: 0 auto;
+  padding: 10px 30px 0;
+
+  @media (min-width: 800px) {
+    max-width: 60%;
+  }
+}
+
+
+.category-page .filter-section .price .input-range{
+  margin-bottom: 20%;
+}
+.category-page .filter-section .price .input-range .input-range__track{
+  border-radius: 0;
+  height: .5rem;
+}
+.category-page .filter-section .price .input-range .input-range__track--active{
+  background: #f4754c;
+}
+.category-page .filter-section .price .input-range .input-range__label--value{
+  display:none;
+}
+
+.category-page .filter-section .price .input-range .input-range__slider{
+  background:#f7f7f7;
+  border: 1px solid #b8b8b8;
+  margin-top: -0.8rem;
+  border-radius: initial;
+}
+.category-page .filter-section .price .input-range .input-range__label{
+  display:none;
+}
+
+.category-page .filter-section .price .price-input input{
+    width: 30%;
+    display: inline-block;
+    padding: 2% 2%;
+}
+.category-page .filter-section .price .price-input input:nth-child(1){
+    margin-right: 28%;
+   
+}
+
+.category-page .applied-filters{
+  margin: 2% 0;
+}
+.category-page .applied-filters .color-facet{
+    display: inline-block;
+    border: 1px solid #a7a7a7;
+    border-radius: 14px;
+    padding: 5px 12px;
+    vertical-align: middle;
+    margin: 0 1%;
+}
+.category-page .applied-filters .color-facet span:nth-child(1){
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.category-page .applied-filters .color-facet span:nth-child(2){
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.category-page .applied-filters .size-facet{
+    display: inline-block;
+    border: 1px solid #a7a7a7;
+    border-radius: 14px;
+    padding: 5px 12px;
+    vertical-align: middle;
+    margin: 0 1%;
+}
+.category-page .applied-filters .size-facet span:nth-child(1){ 
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  text-transform: capitalize;
+}
+.category-page .applied-filters .size-facet span:nth-child(2){ 
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
